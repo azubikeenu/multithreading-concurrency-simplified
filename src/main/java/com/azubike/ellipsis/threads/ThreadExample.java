@@ -30,7 +30,7 @@ public class ThreadExample {
 
 
     // Using a Method defined Runnable
-    private static Runnable copyTask(String srcFile, String destFile) {
+    public static Runnable copyTask(String srcFile, String destFile) {
         return () -> {
             IOUtils.copyFiles(srcFile, destFile);
         };
