@@ -1,6 +1,8 @@
-package com.azubike.ellipsis.threads;
+/**
+ * ThreadGroups allow you to perform group level operations on all threads within a group
+ */
 
-import java.util.Arrays;
+package com.azubike.ellipsis.threads;
 
 class TaskThread implements Runnable {
     @Override
@@ -18,17 +20,16 @@ public class ThreadGroupExample {
         final ThreadGroup myGroup = new ThreadGroup("myGroup");
         myGroup.setMaxPriority(7);
         System.out.println("System threads ---------------");
-        Thread newThread = new Thread(myGroup, new TaskThread(), "Demo Thread");
-
+        Thread newThread = new Thread(myGroup, new TaskThread(), "Demo-Thread");
         newThread.start();
+
 
         Thread currentThread = Thread.currentThread();
         ThreadGroup threadGroup = currentThread.getThreadGroup();
         while (threadGroup.getParent() != null) {
             threadGroup = threadGroup.getParent();
         }
-        threadGroup.list();
-
+        threadGroup.list();// this enumerates through each Thread group and their containing threads
 
 
     }

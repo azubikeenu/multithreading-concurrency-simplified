@@ -20,7 +20,9 @@ public class CallableExample {
         ExecutorService executorService = Executors.newFixedThreadPool(1);
         final Future<Integer> future = executorService.submit(() -> MathClass.sumNumbers(start, end));
         // perform parallel task
-        while (!future.isDone()) {}
+        while (!future.isDone()) {
+            Thread.yield();
+        }
 
         try {
             final Integer result = future.get();

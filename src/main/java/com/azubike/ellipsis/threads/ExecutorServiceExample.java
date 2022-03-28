@@ -4,6 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ExecutorServiceExample {
+    final static String PRIORITY = "DEFAULT";
     public static void main(String[] args) {
         String a = "a.txt";
         String b = "b.txt";
