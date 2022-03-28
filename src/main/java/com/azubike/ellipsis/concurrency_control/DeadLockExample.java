@@ -1,4 +1,4 @@
-package com.azubike.ellipsis.concurreny_control;
+package com.azubike.ellipsis.concurrency_control;
 
 /**
  * Two threads are said to be in a state of Deadlock when both threads are circularly waiting over the lock of a shared resource

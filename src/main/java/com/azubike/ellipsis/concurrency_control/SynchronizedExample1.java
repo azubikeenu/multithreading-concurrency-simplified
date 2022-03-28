@@ -1,4 +1,4 @@
-package com.azubike.ellipsis.concurreny_control;
+package com.azubike.ellipsis.concurrency_control;
 
 class SampleObject {
     private int x;

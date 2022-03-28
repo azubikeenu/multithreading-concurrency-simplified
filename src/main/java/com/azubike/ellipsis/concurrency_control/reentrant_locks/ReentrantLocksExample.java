@@ -1,4 +1,4 @@
-package com.azubike.ellipsis.concurreny_control.reentrant_locks;
+package com.azubike.ellipsis.concurrency_control.reentrant_locks;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;

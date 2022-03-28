@@ -1,4 +1,4 @@
-package com.azubike.ellipsis.concurreny_control;
+package com.azubike.ellipsis.concurrency_control;
 
 import java.util.ArrayList;
 import java.util.List;

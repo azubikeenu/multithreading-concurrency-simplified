@@ -1,4 +1,4 @@
-package com.azubike.ellipsis.concurreny_control.synchronized_block;
+package com.azubike.ellipsis.concurrency_control.synchronized_block;
 /**
  * When compared to  synchronized methods sync blocks are always the better option
  * */
